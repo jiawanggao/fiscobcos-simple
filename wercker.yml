@@ -27,9 +27,12 @@ deploy-to-kubernetes:
     steps:
 
     # https://github.com/wercker/step-bash-template
+    #
+    #
     # This Wercker step will look for files in our repo with a .template extension.
     # It will expand any environment variables in those files, then remove the
     # template extension.
+    #
     - bash-template
 
     # The step above should leave us with a Kubernetes service and deployment yml files.
