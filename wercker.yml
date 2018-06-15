@@ -11,16 +11,15 @@ build:
 
         # Take our tested application revision and its dependencies, bake it in to a
     # Docker image, and push to GCR.
-    
     - internal/docker-push:
             entrypoint: bin/get_ip
             cmd: 0.0.0.0 8080
             working-dir: $WERCKER_ROOT
             tag: $WERCKER_GIT_COMMIT
             ports: "8080"
-            username: oardc/jiawang.gao@oracle.com
-            password: q-SXr(Y:.LJP0Nkx1SF0
-            repository: phx.ocir.io/oardc/fiscobcos-test
+            username: $DOCKER_USERNAME
+            password: $DOCKER_PASSWORD
+            repository: $DOCKER_REPO
             registry: https://phx.ocir.io/v2
 
 deploy-to-kubernetes:
@@ -31,7 +30,6 @@ deploy-to-kubernetes:
     # This Wercker step will look for files in our repo with a .template extension.
     # It will expand any environment variables in those files, then remove the
     # template extension.
-    #
     - bash-template
 
     # The step above should leave us with a Kubernetes service and deployment yml files.
