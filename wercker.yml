@@ -20,7 +20,7 @@ build:
             ports: "8080"
             username: jiawang.gao@oracle.com
             password: EXAlogic)123
-            repository: phx.ocir.io/oardc/fiscobcos-test
+            repository: oardc/fiscobcos-test
             registry: https://phx.ocir.io/v2
 
 deploy-to-kubernetes:
