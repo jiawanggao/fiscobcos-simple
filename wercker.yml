@@ -19,7 +19,7 @@ build:
             tag: $WERCKER_GIT_COMMIT
             ports: "8080"
             username: oardc/jiawang.gao@oracle.com
-            password: EXAlogic)123
+            password: q-SXr(Y:.LJP0Nkx1SF0
             repository: phx.ocir.io/oardc/fiscobcos-test
             registry: https://phx.ocir.io/v2
 
