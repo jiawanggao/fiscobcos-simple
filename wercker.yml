@@ -11,7 +11,7 @@ build:
 
         # Take our tested application revision and its dependencies, bake it in to a
     # Docker image, and push to GCR.
-    #
+    
     - internal/docker-push:
             entrypoint: bin/get_ip
             cmd: 0.0.0.0 8080
