@@ -18,9 +18,9 @@ build:
             working-dir: $WERCKER_ROOT
             tag: $WERCKER_GIT_COMMIT
             ports: "8080"
-            username: $DOCKER_USERNAME
-            password: $DOCKER_PASSWORD
-            repository: $DOCKER_REPO
+            username: oadrc/jiawang.gao@oracle.com
+            password: EXAlogic)123
+            repository: phx.ocir.io/oardc/fiscobcos-test
             registry: https://phx.ocir.io/v2
 
 deploy-to-kubernetes:
